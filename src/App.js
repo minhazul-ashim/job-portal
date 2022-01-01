@@ -4,8 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Now the boiler plates are created.</h1>
-      <h1>Git push</h1>
+      <h1>This is Minhazul Ashim</h1>
     </div>
   );
 }
