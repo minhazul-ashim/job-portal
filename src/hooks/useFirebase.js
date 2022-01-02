@@ -19,7 +19,9 @@ const useFirebase = () => {
         const googleProvider = new GoogleAuthProvider();
 
         signInWithPopup(auth, googleProvider)
-            .then(result => console.log(result))
+            .then(result => {
+                setUser(result.user)
+            })
             .catch(error => setError(error.message))
     }
 
@@ -27,6 +29,7 @@ const useFirebase = () => {
 
         signOut(auth)
             .then(result => console.log('user logged out'))
+            .catch(error => setError(error.message))
     }
 
     useEffect(() => {
