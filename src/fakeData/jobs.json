@@ -1,0 +1,178 @@
+[
+    {
+        "title": "React Developer",
+        "jobType": "On-site",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Full-Time",
+        "desc": "Join one of our product teams and develop features with real value for a one-of-a-kind product management system used by 4000+ companies.\n\n  We work in small cross-functional teams that usually consist of 3 developers, a designer, and a product manager. You’ll be part of the whole feature development lifecycle, with direct access to a wealth of customer feedback.\n  \n  We're scaling our engineering and our product to take on more complex customer challenges. You will have the chance to drive some of the big decisions and foundational platforms that help our whole engineering organization accomplish that while remaining as fast, agile, and reliable as ever.\n  You will be responsible to drive some of the big decisions and foundational platforms that help our engineering organization develop features and improvements to the Productboard product in a secure, well-tested, and performant way\n  You will work with Product Management and other stakeholders (Backend, Product Design, etc.) to iterate on new features within the Productboard platform.\n  Craft code that meets our internal standards for style, maintainability, and best practices for a high-scale web environment. Maintain and advocate for these standards through code review.\n  Consistently ship small features and improvements with minimal guidance and support from other team members. Collaborate with the team on larger projects.\n  You'll help improve the overall experience of our product through improving the quality of the Frontend features both in your team and features that benefit the platform as a whole.\n  You’ll learn, collaborate and teach other Frontend Engineers. Everyone can contribute something new to the team regardless of how long they’ve been in the industry.\n  You’ll fix prioritized issues from the issue tracker. These are typically bugs listed in a Productboard issue with an attached severity and priority label.",
+        "company": "Product Board",
+        "logo": "",
+        "location": "Vancouver, Canada"
+    },
+    {
+        "title": "JavaScript Engineer",
+        "jobType": "Remote",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Part Time",
+        "desc": "If you've mastered current front-end technologies, join our development team as a front end specialist or a full stack developer. We have an exceptional 30+ year delivery track record, deep technical expertise and disciplined delivery and technical engineering practices.\n  The way we build software is strongly influenced by the values of Extreme Programming: feedback, respect, courage, communication and simplicity. We have a team-based Agile environment with virtual collaborative project rooms where you'll work alongside top notch developers, clients and subject matter experts. You'll find continuous opportunities to learn, share knowledge and teach within your team and within the developer community at Intelliware via monthly educational sessions, study groups and hands-on R&D initiatives.\n  Intelliware's niche is delivering custom software applications for complex business and technical challenges. Core development is done in JavaScript and Java, although the nature of our work allows project teams the opportunity to work with a wide variety of technologies. Recent projects we've delivered include technologies such as Angular, React, UIKit, Moleculer, Node.js and MongoDB.While working within a team in an Agile environment, you will be:\n  Designing high quality web and mobile applications that are highly scalable and extensible\n  Collaborating with cross-functional team members on features, design and implementation\n  Estimating, tasking and rapid prototyping\n  Contributing clear and maintainable code to a shared codebase\n  Investigating, learning and applying new technologies and processes\n  Clarifying requirements with team and client representatives\n  Must Have' Skills/Experience:\n  Proven experience working with high performance, high volume, content-rich websites\n  Fluent and current in HTML5, CSS and JavaScript\n  Experience with JavaScript frameworks for both browser and server development and tooling around dependency management and testing\n  Experience with cross browser development\n  Enthusiasm for modern browser and new online technologies/trends\n  Attention to well-crafted code\n  Nice to Have' Skills/Experience:\n  Exposure to and enthusiasm for Agile approaches to software development e.g. testing, continuous integration, project rooms, pair programming, etc.\n  Usability and User Experience best practices\n  Popular APIs such as Facebook and Twitter\n  Mobile platforms\n  Organizing large CSS codebases (e.g. BEM, SMACSS)\n  Experience with and appreciation for the challenges of developing front ends for large sites",
+        "company": "Intellisense Board",
+        "logo": "",
+        "location": "Toronto, Canada"
+    },
+    {
+        "title": "Marketing Manager",
+        "jobType": "Remote",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Part-Time",
+        "desc": "What’s iPhone Photography School all about?\n\n\n  We make online courses that help people take stunning photos with the iPhone.\n  \n  \n  With our 9-year track record, we’re the world’s leader in mobile photography education.\n  \n  \n  And while we’re proud of everything we’ve accomplished so far, we’re just getting started.\n  \n  \n  And this is why we are looking for an experienced Chief Marketing Officer to join our team.\n  \n  \n  \n  What will you be doing as our Marketing Manager?\n  \n  \n  Establishing and leading our online marketing team\n  Hiring and leading specialists for various marketing roles\n  Growing our customer base while maintaining sustainable CPAs\n  Developing and maintaining a consistent high-profile brand image\n  Developing affiliate marketing into a substantial sales channel\n  Testing and growing additional customer acquisition channels\n  Generating financial results without sacrificing our brand\n  \n  \n  What’s in it for me?\n  \n  \n  Of course this can’t all be one-sided, and we believe that we provide one of the best remote working environments in the world.\n  \n  \n  State of the art software to stay connected and organized? We’ve got that.\n  \n  \n  Investing both time and money in your learning to ensure that you continually grow? We do that.\n  \n  \n  Flexible working schedule to ensure that you maintain a healthy work-life balance? Well that’s a no-brainer.",
+        "company": "i Photography School",
+        "logo": "",
+        "location": "Melbourne, Australia"
+    },
+    {
+        "title": "React Native Developer",
+        "jobType": "Remote",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Full-Time",
+        "desc": "About Company:\n\n  VISER X LIMITED is a global information technology, software development and digital marketing agency. We have a team of 40+ energetic and talented team members successfully providing software development, web application development and digital marketing services worldwide.\n  \n  ----------------\n  \n  Key requirements:\n  \n  - Build proficiently hybrid mobile applications with react native development expertise for iOS and Android platforms.\n  \n  - Prompt to designs that allow flexibility in UI, APIs, and different technologies like 3rd party services such as maps.\n  \n  - Publish applications in both Apple app store and Google play store.\n  \n  - Develop application handles asynchronous request handling, partial page updates and AJAX.\n  \n  - Build reusable code and libraries for future use.\n  \n  - Competent with JavaScript (ES6) prototypical Inheritance JS.\n  \n  - Having experience with React JS, AngularJS or VueJS, Foundation or Bootstrap workflows.\n  \n  - Have used source control like Git.\n  \n  - Understanding of browsers, the DOM, and how to build rich user interfaces.\n  \n  - Proficient in Android development, preferably in Java.\n  \n  - Experience with Agile/Scrum methodology.",
+        "company": "Level X",
+        "logo": "",
+        "location": "Dhaka, Bangladesh"
+    },
+    {
+        "title": "Business Analyst",
+        "jobType": "On-site",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Full-Time",
+        "desc": "The ideal candidate is a team player who will be responsible for working with company data in various business areas. Specific responsibilities include reporting metrics, analyzing methodologies, suggesting operation improvements, and building proposal evaluations in a cross-functional environment.\n\n  Responsibilities\n  • Requirement Collection and Analysis\n  • Build cross-functional partnerships, internally and externally\n  • Manage budgets\n  • Maintain connection with all stakeholder\n  • Experience in BRD, SRS, and others Documents\n  • User Training and UAT\n  • Maintain good communication with Clients\n  • Experience in Working with Fintech software.\n  \n  Qualifications\n  • Bachelor's degree with Accounting or Finance or equivalent experience\n  • Fluency in Microsoft Office suite (Outlook, Excel, Word, PowerPoint, etc.)\n  • Strong written, verbal, and collaboration skills",
+        "company": "Apsis",
+        "logo": "",
+        "location": "Chennai, India"
+    },
+    {
+        "title": "Legal Advisor",
+        "jobType": "Remote",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Part-time",
+        "desc": "Job Responsibilities\n  • Draft/ Vet agreements, MoU, SLA, NDA, Amendment, Renewal, Addendum to the Agreements/MoU. collect feedback from the internal and external stakeholders for any observations, incorporate the changes in alignment with the legal framework of BL, finalize the agreed draft and ensure the signing for final execution\n  • Identify the risk or request from stakeholders about a particular risk, coordinate with the concerned departments within the Organization and Vendors/ Supplier/Governmental entities and/or their lawyers to resolve the legal as well as commercial and procurement related issues to facilitate the timely resolution of the Agreements/MoU/SLA by providing recommendation in accordance with the BL and Group policy and strategy\n  • Conduct research and analyze the laws, regulations in order to assist internal stakeholders with the updated laws and regulation\n  • Update Legal database for assigned final agreements and other legal documentation, track and monitor ongoing issues in a registrar and follow up with respective stakeholders in regards to the status of execution\n  • Identify legal risk/issues in the existing format/new of different Agreements, Memorandums, Memos and Templates, collect views of the user departments on the existing templates to understand new requirements, propose modification thereto and finalize, submit & circulate the modified Agreement(s)/ Memo(s)/ Template(s) before concern management for implementation and for use by relevant stakeholders\n  • Address appropriate legal strategy for dispute involved with a high financial stake, obtain approval from the Management on an agreed legal course of action and instruct external legal counsels to take appropriate actions.\n  • Prepare comprehensive 'Plan of Action' for necessary legal action and propose a way forward for effective resolution of any dispute\n  • Review, identify and propose a legal strategy for the next 'forum' and 'course of action' (where the Judgments/Orders are against the Company), ensure proper litigation management through appearance and attending through the external counsels before the Appellate Division, High Court Division, Labour Appellate Tribunal, and Customs Tribunal for filling & defending cases, swearing affidavit, deposition, hearing and argument in all high-value litigation matters individually as well as along with external counsels on behalf of Company.\n  • Manage the process for intellectual properties of the company, identify and manage the ongoing management of copyright, trademarks and track and manage trademark applications of the company\n  Additional Requirements\n  • 3-4 years of relevant experience\n  • Required Knowledge & Skills-\n  • Basic knowledge on Company Law, Telecommunication Law and general corporate laws\n  • Strong understanding of commercial aspects and the role of legal support requires for achieving commercial targets\n  • Through understanding of end to end contract execution process\n  • Basic understanding of the market and industry practice",
+        "company": "BanglaDish",
+        "logo": "",
+        "location": "Chittagong, Bangladesh"
+    },
+    {
+        "title": "Architect",
+        "jobType": "On-site",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Full-Time",
+        "desc": "Apply Procedure\n\n  The interested candidate are requested to bring CV for interview within\n  1st week of January 2022\n  HR Admin Department\n  House # 22, Road # 108, Gulshan-2, Dhaka-1212. Cell :01712532015\n  \n  Application Deadline : 7 Jan 2022\n  \n  Published On\n  1 Jan 2022Company Information\n  Spring Field Developments Ltd Address : House # 22 (1st floor), Road # 108, Gulshan-2, Dhaka.",
+        "company": "Lawrie Civils",
+        "logo": "",
+        "location": "California, USA"
+    },
+    {
+        "title": "QA Engineer",
+        "jobType": "Remote",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Full Time",
+        "desc": "Company Description\n\n  Nitex (https://nitex.com) is a Singapore-based startup, changing how the $1.5 Trillion garment supply chain works. We’re a full-stack B2B commerce platform for global names such as H&M, Zara, Zalando, Boohoo, Uniqlo, etc. where brands have an amazon-like buying experience while managing their entire supply chain from a single platform with complete transparency. With significant revenue, regular traction, and investment rounds closed, we’re expanding our engineering team that makes our customers’ life 10x easier.\n  \n  Currently, we are looking for Sr SQA Engineers, who are analytical, who like to challenge the status quo, and can communicate very well with stakeholders.\n  \n  Our ideal candidate will be responsible for conducting tests before, during, and after product launches to ensure software runs smoothly, while being cost-effective. If you hold an engineering background and enjoy providing end-to-end solutions to software quality problems, we’d like to meet you.\n  \n  Job Description\n  \n  Sr SQA engineer responsibilities include designing and implementing tests, debugging, and defining corrective actions. You will review system requirements and track quality assurance metrics. You will also lead team and coach SQA Engineers.\n  • Build test strategies, detailed test plans, and test architectures\n  • Perform thorough regression testing when new features are launched\n  • Perform thorough regression testing when critical bugs are resolved\n  • Design, develop and execute automation scripts using relevant tools\n  • Track quality assurance metrics, like defect densities and open defect counts\n  • Collaborate with cross-functional team to identify system requirements\n  • Review UX/UI designs, and requirements with cross-functional team\n  • Directly ensure product implementation and system adoption among users\n  • Architect, implement and manage automated suites of test scripts\n  • Lead documentation reviews during product release cycle to ensure quality and comprehensive product documentation\n  • Coach and mentor SQA Engineers in the execution of testing efforts\n  Qualifications\n  • Ability to multitask with ease is essential to the success of this position\n  • 3+ years of proven work experience in software quality assurance\n  • Strong knowledge of software QA methodologies, tools, and processes\n  • Comfortable building and maintaining test systems from scratch\n  • Strong hold in writing concise, and comprehensive test plans and test cases\n  • Hands-on experience with white-box, black-box testing, and automated testing tools\n  • Solid knowledge of SQL, programming/scripting, cloud platforms like AWS/GCP etc.\n  • Knowledge of Windows/UNIX System Administration: Linux, MAC, Windows\n  • Experience with performance and/or security testing is a plus\n  • BS in Computer Science or a related technical field or equivalent practical experience\n  \n  Additional Information\n  • Salary: Industry standard competitive package (12+1) ranging between 650,000 - 1,040,000 BDT / Per Annum\n  • Yearly salary review based on performance",
+        "company": "Fitex Inc",
+        "logo": "",
+        "location": "San Fransisco, USA"
+    },
+    {
+        "title": "Backend Developer",
+        "jobType": "Remote",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Full-Time",
+        "desc": "Company Description\n\n  ShopUp works with a mission of enabling SMEs in Bangladesh with technology. We help online sellers & neighborhood retailers to build, manage and grow their businesses by providing easy access to B2B sourcing, last-mile logistics, digital credit, and business management solutions.\n  \n  Job Description\n  \n  Roles/Responsibilities\n  • Collaborate with our team in every stage of a product's lifecycle; from planning to delivery\n  • Create clear, concise and maintainable code that your teammates can understand and build upon\n  • Design the sub-module working with leads.\n  • Hands-on code the critical parts of the module\n  • Ensure coding standards, proper design patterns, writing test cases and project management processes are followed\n  • Mentor the junior programmers\n  • Work independently and proactively to deliver production-ready code with minimal guidance\n  \n  Qualifications\n  \n  Jobs Skills required\n  • Backend Experience in either of RoR, NodeJS, Java, Go, MySQL, Mongo\n  • Understanding the use cases for relational (MySQL) and non-relational (MongoDB) data, OLTP and OLAP workloads\n  • Good knowledge of the most common web servers/load balancers (Apache, Nginx, HAProxy)\n  • Passionate about software development, concurrency mechanisms and building small, intercommunicating services using REST, Message brokers like Kafka/Redis, gRPC.\n  • Experience with Docker and CI.\n  • Excellent written and verbal communication skills\n  • Experience within Linux/Unix environment\n  • Experience with AWS or GCP\n  • Solid debugging, optimisation and problem-solving skills\n  \n  Bonus skills and experiences:\n  • Experience with other ecosystems like, Python.\n  • Experience in Frontend development.\n  • GraphQL\n  • Deployment and provisioning automation tools e.g Kubernetes, Openshift\n  • Elastic Stack",
+        "company": "Stop Up",
+        "logo": "",
+        "location": "Banani, Dhaka, Bangladesh"
+    },
+    {
+        "title": "Marketing Executive",
+        "jobType": "On-site",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Full-Time",
+        "desc": "Job Descriptions / Responsibility:\n  • Manage the Facebook, Instagram, Linekdin, YouTube, Google+\n  • Conceptualize and execute creative campaigns of varying scale and complexity for online and offline platforms\n  • Manage, create, and maintain Facebook Ads and Google Ads for lead generation and brand awareness\n  • Create graphics materials by using Adobe's Creative Suite-including Photoshop, Illustrator, InDesign\n  • Making video content for digital platforms or social media sites\n  • Monitor effective benchmarks (best practices) for measuring the impact of social media campaigns\n  • Analyze, review, and report on effectiveness of campaigns in an effort to maximize results\n  • Monitor and keep the social media pages up-to-date with current trends in tools, applications, channels, design, and strategy\n  • Create and manage effective web contents to drive effective SEM program\n  • Organize/create online banner adverts and oversee pay per click (PPC) ad management\n  • Create the manage the banners & contents of web site and apps\n  • Capable to manage multiple projects\n  • Develop all types of marketing & communication materials.\n  • Any other task assigned by the management\n  \n  Educational Requirements\n  • Minimum graduate from a well-reputed university\n  • Academic qualifications may be relaxed for skilled candidates\n  \n  Skills Requirements\n  • Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro, Adobe After effects, Wondershare Filmora\n  \n  Experience Requirements\n  • Minimum 2 years' hands-on digital marketing experience for business social media pages and/or websites\n  \n  Additional Job Requirements\n  • Age 24 to 35 years\n  • Experience in e-commerce platform will be an added advantage\n  • The applicants should have experience in the following area(s): Art & Sketch, Graphic Design (Computer Aided)\n  • Must have creative visualizing capabilities to ideate campaign activities\n  • Should have good communication and interpersonal skills and be able to handle guest queries on social media with diplomacy\n  • Must be proactive in assuming responsibilities.\n  • Must be able to work independently\n  • Strong verbal communication skills and ability to create great working relationships.\n  • Have excellent writing capabilities and an eye for detail\n  • Proficiency in English language, both written and spoken, is essential\n  • Think creatively and strategically at a fast pace\n  • Have good organizational skills, integrity and great follow through\n  • An amiable personality\n  • Must be a TEAM player with strong interpersonal skills\n  • Ability to work under pressure\n  \n  Salary Range\n  • Negotiable\n  \n  Job Location\n  • Banasree, Dhaka",
+        "company": "Phoenix Digital",
+        "logo": "",
+        "location": "Dhaka, Bangladesh"
+    },
+    {
+        "title": "Content Writer",
+        "jobType": "Remote",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Part-time",
+        "desc": "If you want to write with me on my blog isitcents.com then you come to the right place.\n\n  Please it's all about blogging content.\n  \n  If you know well WordPress and SEO then please apply for this job.\n  \n  For more details email me: nhdfenrir@gmail.com\n  \n  No fee for applying.\n  \n  Thanks!",
+        "company": "Libicent",
+        "logo": "",
+        "location": "Sylhet, Bangladesh"
+    },
+    {
+        "title": "Product Manager",
+        "jobType": "On-site",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Full-Time",
+        "desc": "The ideal candidate is an analytical team player responsible for leading a team of high-performing individuals who own the entire product lifecycle from strategy to evaluation. You will also work cross-functionally to complete product roadmaps and discover new opportunities.\n\n  Responsibilities\n  • Determine needs and desires by specifying the research needed to obtain market information.\n  • Recommends the nature and scope of present and future product lines by reviewing product specifications and requirements, appraising new product ideas and/or product or packaging changes.\n  • Assesses market competition by comparing the company’s product to competitors’ products.\n  • Provides source data for product line communications by defining product marketing communication objectives.\n  • Obtains product market share by working with Business Development to develop product sales strategies.\n  • Assesses product market data by communicating with Business development\n  • Provides information for management by preparing short-term and long-term product sales forecasts and special reports and analyses, answering questions and requests.\n  • Brings new features to market by analyzing proposed product requirements and product development programs; preparing return-on-investment analyses; establishing time schedules with engineering and manufacturing.\n  • Completes operational requirements by scheduling and assigning employees, following up on work results.\n  • Maintains product management staff by recruiting, selecting, orienting, and training employees.\n  • Maintains product management staff job results by counselling and disciplining employees, planning, monitoring, and appraising job results.\n  • Maintains professional and technical knowledge by attending educational workshops, reviewing professional publications, establishing personal networks, participating in professional societies.\n  • Contributes to team effort by accomplishing related results as needed.\n  • Make sure the business team, design team and development team is on the same track.\n  • Review quality of work done by developers and teach lead.\n  • Work as a product analyst.\n  • Perform product operations tasks as required.\n  \n  Qualification\n  • Experience with end to end product delivery\n  • Experience overseeing roadmap strategy\n  • Ability to contribute to engineering and strategy discussion related to a product development\n  • Experience working with engineering, design and business development teams.\n  • Strong quantitative and qualitative analytical skills, attention to detail, and good business acumen.\n  • Strong written and oral communicator across multiple leadership levels and functions.\n  • Self-starter possesses the flexibility to work in a fast-changing environment and ambiguous situations",
+        "company": "Slice Kite",
+        "logo": "",
+        "location": "Maharashtra, India"
+    },
+    {
+        "title": "Front Desk Receptionist",
+        "jobType": "On-site",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Full-Time",
+        "desc": "Job Context:\n  • We are looking for a Receptionist who are smart, intelligent, ambitious, and must have\n  Good communication skills.\n  • Smart and Good Looking.\n  • Good Team Player.\n  • Self- Motivate and Problem Solving Skills.\n  Multi-tasking Abilities.\n  \n  Job Responsibilities:\n  • Excellent knowledge of MS Office (especially English and Bangla typing).\n  • Handle phone calls incoming/outgoing with greetings in a professional way.\n  • Receive letters, messages, and documents and pass them to proper places/persons and keep records.\n  • Provide necessary information to the Client, and take messages.\n  • Internal & External clients handle with good smiley mannerism and well behavior.\n  • Maintains a safe and clean reception area by complying with procedures and rules.\n  • Received phone call & transfer it to the concerned person.",
+        "company": "Doodesh",
+        "logo": "",
+        "location": "New York, USA"
+    },
+    {
+        "title": "Blockchain Developer",
+        "jobType": "Remote",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Full-Time",
+        "desc": "Would be great if you brought this to the role\n\n  Required skills:\n  • 3+ years of experience as a Software Engineer\n  • 1y+ years of Solidity smart contract development experience\n  • 2+ years of as front-end or fullstack or backend developer (React, Node.js, ideally Typescript)\n  • Experience developing, deploying and running Dapps/smart contracts in production on Ethereum mainnet or L2/sidechain (ideally DeFi Dapps/protocols and/or token-based use cases)\n  • Knowledge of secure Solidity development patterns for tokens and DeFi protocols\n  • Good understanding of Javascript ethereum SDKs (web3,js, ethers.js)\n  • Good knowledge of most prominent ERC/EIP Ethereum standards\n  • Good knowledge of smart contract development tools/frameworks (Truffle, Hardhat)\n  • Experience using smart contract auditing tools (MythX, other)\n  • Experience working in CI/CD setup\n  • High quality and testing standards\n  • Good documentation practises\n  \n  Bonus points for any of:\n  • Experience developing and contributing to open source projects (incl. but not limited to Solidity open source codebases)\n  • Familiarity with DeFi protocols mechanics and smart contract codebases, and/or digital assets/payments and other token standards like ERC-777/20/721/1155/1400 and existing open source implementations (OpenZeppelin, Universal Token, etc.)\n  • Knowledge/understanding of cross-chain interoperability techniques (HTLC, bridging)\n  • Knowledge/understanding of L2 technologies (ZK/optimistic rollups, PoS/PoA sidechains)\n  • Experience using smart contract auditing techniques (fuzzing, other)\n  • Deep knowledge/experience understanding of EVM\n  • BSc/MSc in Computer Science or related subject\n  • Other skills to demonstrate:\n  • Excellent verbal and written communication in English\n  • Teamwork, flexibility, initiative, communication and organization\n  • Ability to share knowledge, train other developers\n  • Willingness to constantly learn & improve, challenging yourself to stay at the top of your game",
+        "company": "Clicks Inc",
+        "logo": "",
+        "location": "Sydney, Australia"
+    },
+    {
+        "title": "Angular Developer",
+        "jobType": "Remote",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Part-time",
+        "desc": "Angular Developer\n\n  Tech Allies\n  \n  View all jobs of this company\n  Vacancy\n  \n  1\n  Job Context\n  \n  Angular Developer for timebound projects\n  Job Responsibilities\n  • Develop front end with a specific described form in angular\n  • Connect with backend through Web/RESTful API\n  • Daily basis push/pull update to/from github\n  • Daily basis task update in JIRA\n  Employment Status\n  \n  Full-time\n  Educational Requirements\n  • Bachelor of Science (BSc) in Computer Science\n  Experience Requirements\n  • 1 to 2 year(s)\n  Additional Requirements\n  • Age at most 30 years\n  • 1-2 years' work experience.\n  • Strong programming knowledge in Angular framework.\n  • Ability to work with backend data by connecting with backend database, REST API, etc.\n  • Experience in HTML, CSS expected.\n  • Ability to develop clean codes by standard coding conventions.\n  • Should be comfortable with Agile software development process.\n  • Solid knowledge on relational (SQL) database is required",
+        "company": "Tech Allies",
+        "logo": "",
+        "location": "Singapore City, Singapore"
+    },
+    {
+        "title": "Motion Graphics Designer",
+        "jobType": "Remote",
+        "postingDate": "01/01/22",
+        "deadline": "10/1/22",
+        "job": "Part-time",
+        "desc": "Paid Internship Opportunity in INSIGHTERS\n\n  Ink Ind, is looking for an Intern in Creative team.\n  \n  Position: Intern, Motion graphics designer.\n  \n  Job Type: Internship\n  \n  What will be your responsibilities?\n  \n  • Assisting in creating motion graphic contents.\n  \n  • Editing video contents.\n  \n  • Looking after client’s digital motion contents day to day requirements.\n  \n  • Research and generate ideas to improve contents.\n  \n  Skills Required:\n  \n  • Degree in a relevant subject or equivalent qualifications\n  \n  • All courses must be completed\n  \n  • Must have an open mind to work with ownership and extended time\n  \n  • Good Understanding of\n  \n  Adobe Premiere pro\n  \n  Adobe After effects.\n  \n  Adobe Photoshop skills can be added advantage.\n  \n  • Experience of any sort is not mandatory but will have added advantage\n  \n  Office Time: 6 days a week except Saturdays\n  \n  Office Address: Shankar, dhanmondi.\n  \n  Send your CV or Resume with portfolio at:* insighters360@gmail.com\n  \n  Please put \"Application for Internship: motion graphics and video editing as your subject while sending the CV",
+        "company": "Inc Ink",
+        "logo": "",
+        "location": "Kualalampur, Malaysia"
+    }
+]

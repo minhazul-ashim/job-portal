@@ -1,0 +1,48 @@
+[
+    {
+        "name":"Mark Henry",
+        "designation":"Software Engineer",
+        "photo":"https://i.ibb.co/xJRcLBF/8.png"
+    },
+    {
+        "name":"Merkary",
+        "designation":"Software Engineer",
+        "photo":"https://i.ibb.co/bHG5mFB/5.png"
+    },
+    {
+        "name":"Any Kerly",
+        "designation":"React Developer",
+        "photo":"https://i.ibb.co/c8SdFK1/4.png"
+    },
+    {
+        "name":"Jonathon Trute",
+        "designation":"Front-End Engineer",
+        "photo":"https://i.ibb.co/Dz35BZP/3.png"
+    },
+    {
+        "name":"Amila Kews",
+        "designation":"Testing Engineer",
+        "photo":"https://i.ibb.co/cLQ5HsP/9.png"
+    },
+    {
+        "name":"Jonathon Mich",
+        "designation":"App Developer",
+        "photo":"https://i.ibb.co/TWHQj9G/1.png"
+    },
+    {
+        "name":"Kerly Machson",
+        "designation":"Software Engineer",
+        "photo":"https://i.ibb.co/Swd4Xhp/6.png"
+    },
+    {
+        "name":"Ami Smith",
+        "designation":"Backend Developer",
+        "photo":"https://i.ibb.co/bHG5mFB/5.png"
+    },
+    {
+        "name":"Paul Chista",
+        "designation":"React Developer",
+        "photo":"https://i.ibb.co/Dz35BZP/3.png"
+    }
+
+]
