@@ -12,8 +12,8 @@ const Banner = () => {
                         <h4 style={{marginTop:"50px"}}>4536+ Jobs listed</h4>
                         <h1 style={{fontSize:"60px",lineHeight:"60px",marginTop:"20px"}}>Find Your Next</h1>
                         <h1 style={{fontSize:"60px",lineHeight:"60px"}}>Dream Job</h1>
-                        <Link to="/home">
-                            <Button className="mt-4 fs-5" variant="warning">Looking For a Job?</Button>
+                        <Link to="/jobs">
+                            <Button className="my-4 fs-5" variant="warning">Looking For a Job?</Button>
                         </Link>
                     </Col>
                     <Col xs={12} md={6}>
