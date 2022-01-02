@@ -69,6 +69,7 @@ const useFirebase = () => {
     return {
         user,
         error,
+        setError,
         loading,
         googleSignIn,
         logOut,
