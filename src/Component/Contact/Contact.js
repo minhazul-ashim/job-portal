@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
-import { Alert, Button } from "react-bootstrap";
+import { Alert, Button, Container } from "react-bootstrap";
 
 const Contact = () => {
     const [success, setSuccess] = useState(false);
@@ -24,7 +24,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="contact-form py-5">
+        <Container className="contact-form py-5">
             <form className="w-50" onSubmit={sendEmail}>
                 <h2 className="text-primary fw-bold">Contact with us</h2>
                 <input
@@ -62,7 +62,7 @@ const Contact = () => {
                 <Alert variant="primary">Your Email Send Successfully!</Alert>
             )}
             </form>
-        </div>
+        </Container>
     );
 };
 
