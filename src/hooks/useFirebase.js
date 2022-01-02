@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getAuth, signInWithPopup, signOut, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import initializeAuth from '../firebase/firebase.init'
+import { useNavigate } from 'react-router-dom';
 
 initializeAuth()
 
@@ -14,12 +15,13 @@ const useFirebase = () => {
 
     const auth = getAuth();
 
-    const googleSignIn = () => {
+    const googleSignIn = (from, navigate) => {
 
         const googleProvider = new GoogleAuthProvider();
 
         signInWithPopup(auth, googleProvider)
             .then(result => {
+                navigate(from, { replace: true })
                 setUser(result.user)
             })
             .catch(error => setError(error.message))
@@ -45,11 +47,15 @@ const useFirebase = () => {
             .catch(error => setError(error.message))
     }
 
-    const manualSignIn = (email, password) => {
+    const manualSignIn = (email, password, from, navigate) => {
 
         signInWithEmailAndPassword(auth, email, password)
-            .then(result => { })
+            .then(result => {
+
+                navigate(from, {replace: true})
+             })
             .catch(error => {
+                
                 setError(error.message)
             })
     }

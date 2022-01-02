@@ -9,6 +9,7 @@ import Jobs from './Component/Jobs/Jobs';
 import Login from './Component/Login/Login';
 import NotFound from './Component/NotFound/NotFound';
 import Postjob from './Component/Postjob/Postjob';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import Register from './Component/Register/Register';
 import Footer from './Component/Shared/Footer/Footer';
 import Header from './Component/Shared/Header/Header';
@@ -24,7 +25,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/about" element={<About />} />
-          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs" element={<PrivateRoute><Blogs></Blogs></PrivateRoute>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

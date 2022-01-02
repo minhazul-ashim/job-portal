@@ -4,7 +4,7 @@ import bgImage from '../../Images/register -page.jpg'
 import { Button, Form } from 'react-bootstrap';
 import logo from '../../Images/logo.png'
 import useAuth from '../../hooks/useAuth';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -12,11 +12,17 @@ const Login = () => {
 
     const [loginInfo, setLoginInfo] = useState({})
 
+    const location = useLocation()
+
+    const navigate = useNavigate()
+
+    const from = location.state?.from.pathname || '/'
+
     const handleLogin = (e) => {
 
         const { email, pass } = loginInfo;
 
-        manualSignIn(email, pass)
+        manualSignIn(email, pass, from, navigate)
 
         e.target.reset()
 
@@ -60,7 +66,7 @@ const Login = () => {
                     </Button>
                     <p>New here? <Link to='/register'>Please Register</Link> </p>
 
-                    <Button variant='danger' onClick={googleSignIn}>
+                    <Button variant='danger' onClick={() => googleSignIn(from, navigate)}>
                         Sign in with Google
                     </Button>
                 </Form>
