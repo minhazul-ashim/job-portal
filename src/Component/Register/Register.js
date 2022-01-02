@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Register = () => {
 
-    const { createUser } = useAuth()
+    const { createUser, error } = useAuth()
 
     const [confirmPass, setConfirmPass] = useState(false);
 
@@ -19,8 +19,6 @@ const Register = () => {
         if (userInfo.pass === userInfo.confirm) {
 
             const { name, email, pass } = userInfo;
-
-            console.log(userInfo)
 
             createUser(email, pass, name)
 
@@ -80,7 +78,11 @@ const Register = () => {
                             <p className='text-danger'>Password does not match. Please Recheck your password</p> :
                             ''
                     }
-
+                    {
+                        error ?
+                            <p>{error}</p> :
+                            ''
+                    }
                     <Button variant="primary" type="submit">
                         Submit
                     </Button>
