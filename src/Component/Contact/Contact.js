@@ -1,38 +1,68 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import "./Contact.css";
+import { Alert, Button } from "react-bootstrap";
 
 const Contact = () => {
-    const form = useRef();
+    const [success, setSuccess] = useState(false);
 
     const sendEmail = (e) => {
-        e.preventDefault();
-
         emailjs
             .sendForm(
-                "YOUR_SERVICE_ID",
-                "YOUR_TEMPLATE_ID",
-                form.current,
-                "YOUR_USER_ID"
+                "service_dvg6d1l",
+                "template_6uw69ov",
+                e.target,
+                "user_6G3ltyQPq4D913yRocuZG"
             )
-            .then(
-                (result) => {
-                    console.log(result.text);
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
+            .then((data) => {
+                setSuccess(true);
+            })
+            .catch((err) => {
+                setSuccess(false);
+            });
+        e.preventDefault();
     };
+
     return (
-        <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
-        </form>
+        <div className="contact-form py-5">
+            <form className="w-50" onSubmit={sendEmail}>
+                <h2 className="text-primary fw-bold">Contact with us</h2>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    className="form-control"
+                    required
+                ></input>{" "}
+                <br /> <br />
+                <input
+                    type="email"
+                    name="user_email"
+                    placeholder="Your email"
+                    className="form-control"
+                    required
+                ></input>{" "}
+                <br /> <br />
+                <textarea
+                    name="message"
+                    placeholder="Your message"
+                    className="form-control"
+                    required
+                ></textarea>{" "}
+                <br />
+                <Button
+                    value="send"
+                    className="form-control"
+                    type="submit"
+                    variant="primary"
+                >
+                    Send
+                </Button> <br /> <br />
+            {success && (
+                <Alert variant="primary">Your Email Send Successfully!</Alert>
+            )}
+            </form>
+        </div>
     );
 };
 
