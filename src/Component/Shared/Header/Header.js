@@ -19,13 +19,7 @@ const Header = () => {
     const navigate = useNavigate()
 
     return (
-        <Navbar
-            collapseOnSelect
-            expand="lg"
-            bg="dark"
-            variant="dark"
-            sticky="top"
-        >
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"           sticky="top">
             <Container>
                 <Navbar.Brand>
                     <Link to="/home">
@@ -40,7 +34,7 @@ const Header = () => {
                                 Home
                             </Button>
                         </Link>
-                        <Link to="/jobs">
+                        <Link to="/browseJobs">
                             <Button variant="outline-primary text-light border-0 mx-1">
                                 Browse Jobs
                             </Button>
