@@ -12,12 +12,14 @@ import SwiperCore, {
 SwiperCore.use([Autoplay,EffectFade,Pagination]);
 
 const Feature = () => {
+    
     const [features,setFeatures]=useState([])
     useEffect(()=>{
         fetch('./Featured.json')
         .then(res=>res.json())
         .then(data=>setFeatures(data))
     },[])
+
     return (
         <Container className="mt-5">
             <h2 className="mb-3">Featured Candidates</h2>
