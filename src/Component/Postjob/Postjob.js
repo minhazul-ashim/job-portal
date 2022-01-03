@@ -75,7 +75,7 @@ const Postjob = () => {
                 <br /> <br />
                 {success && (
                     <Alert variant="primary">
-                        Your Email Send Successfully!
+                        Your post Successfully!
                     </Alert>
                 )}
             </form>
