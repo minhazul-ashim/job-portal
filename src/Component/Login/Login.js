@@ -5,6 +5,7 @@ import { Button, Form } from 'react-bootstrap';
 import logo from '../../Images/logo.png'
 import useAuth from '../../hooks/useAuth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { FcGoogle } from 'react-icons/fc'
 
 const Login = () => {
 
@@ -66,8 +67,8 @@ const Login = () => {
                     </Button>
                     <p>New here? <Link to='/register'>Please Register</Link> </p>
 
-                    <Button variant='danger' onClick={() => googleSignIn(from, navigate)}>
-                        Sign in with Google
+                    <Button variant='outline-danger' onClick={() => googleSignIn(from, navigate)}>
+                        <FcGoogle /> Sign in with Google
                     </Button>
                 </Form>
             </div>

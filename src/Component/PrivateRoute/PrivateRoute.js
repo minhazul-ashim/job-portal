@@ -1,20 +1,22 @@
 import React from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth'
+import LoadingPage from '../LoadingPage/LoadingPage'
 
 const PrivateRoute = ({ children }) => {
 
-    const { user } = useAuth();
-    
+    const { user, loading } = useAuth();
+
     const location = useLocation();
 
-    if (!user) {
-
-        return <Navigate to='/login' state={{ from: location }} replace />
-
+    if (loading) {
+        return <LoadingPage></LoadingPage>
     } else {
-
-        return children
+        if (user) {
+            return children
+        } else {
+            return <Navigate to='/login' state={{ from: location }} />
+        }
     }
 };
 
