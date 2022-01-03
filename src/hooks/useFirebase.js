@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { getAuth, signInWithPopup, signOut, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import initializeAuth from '../firebase/firebase.init'
+import { postUserData } from '../features/slices/userDataSlice';
+import { useDispatch } from 'react-redux';
 
 initializeAuth()
 
@@ -12,6 +14,8 @@ const useFirebase = () => {
 
     const [loading, setLoading] = useState(true);
 
+    const dispatch = useDispatch()
+
     const auth = getAuth();
 
     const googleSignIn = (from, navigate) => {
@@ -21,9 +25,11 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
 
-                setLoading(false)
+                const { email, displayName } = result.user;
+                dispatch(postUserData({ email, displayName }))
                 navigate(from, { replace: true })
                 setUser(result.user)
+                setLoading(false)
             })
             .catch(error => setError(error.message))
     }
@@ -40,13 +46,16 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
 
-                setLoading(false)
                 updateProfile(auth.currentUser, {
 
                     displayName: name
                 })
+                setLoading(false)
             })
             .catch(error => setError(error.message))
+            .finally(() => {
+                dispatch(postUserData({ email: email, displayName: name }))
+            })
     }
 
     const manualSignIn = (email, password, from, navigate) => {
