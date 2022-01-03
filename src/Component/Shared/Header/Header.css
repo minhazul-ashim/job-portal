@@ -1,0 +1,17 @@
+
+.toggle-container {
+
+    display: flex;
+}
+
+.dp-container {
+
+    display: flex;
+    width: 50px;
+}
+
+.dp {
+
+    width: 100%;
+    border-radius: 50%;
+}
