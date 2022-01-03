@@ -1,10 +1,15 @@
-import React from 'react';
+import React from "react";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import img from "../../Images/not-found.jpg";
 
 const NotFound = () => {
     return (
-        <div>
-            <h3>404 Error </h3>
-            <h3>Page Not Found </h3>
+        <div className="my-5">
+            <img src={img} alt="" className="w-100%" /> <br /> <br />
+            <Link to="/">
+                <Button>Back to home</Button>
+            </Link>
         </div>
     );
 };
