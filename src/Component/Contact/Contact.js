@@ -32,7 +32,7 @@ const Contact = () => {
         <Container>
             <div className="contact-form text-start">
                 <form className="w-50" onSubmit={sendEmail}>
-                    <h2 className="text-primary fw-bold py-2">Contact with us</h2>
+                    <h2 className="text-primary mb-5 fw-bold py-2">Contact with us</h2>
                     <input
                         type="text"
                         name="name"
@@ -80,22 +80,18 @@ const Contact = () => {
                         <p>Road: 4 Sector 1, Uttara Dhaka-1230, Bangladesh.</p>
                     </Col>
                     <Col xs={12} md={4} className="social-link-text text-start">
-                        <h2 className="text-primary fw-bold">Social links</h2>
-                        <a href="#">
-                            {" "}
-                            <AiFillFacebook /> Facebook{" "}
-                        </a>{" "}
-                        <br />
-                        <a href="#">
-                            {" "}
-                            <AiFillTwitterSquare /> Twitter{" "}
-                        </a>{" "}
-                        <br />
-                        <a href="#">
-                            {" "}
-                            <AiFillLinkedin /> Linkedin{" "}
-                        </a>{" "}
-                        <br />
+                        <h2 className="text-primary fw-bold text-center">Social links</h2>
+                        <div className="d-flex justify-content-around">
+                            <a href="#">
+                                <AiFillFacebook style={{ fontSize: '45px', color: '#333', borderRadius: '50px' }} />
+                            </a>
+                            <a href="#">
+                                <AiFillTwitterSquare style={{ fontSize: '45px', color: '#333', borderRadius: '50px' }} />
+                            </a>
+                            <a href="#">
+                                <AiFillLinkedin style={{ fontSize: '45px', color: '#333', borderRadius: '50px' }} />
+                            </a>
+                        </div>
                     </Col>
                 </Row>
             </Container>

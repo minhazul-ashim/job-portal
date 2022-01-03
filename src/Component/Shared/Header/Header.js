@@ -1,17 +1,26 @@
 import React from "react";
 import {
     Button,
+    ButtonGroup,
     Container,
     Dropdown,
     Nav,
     Navbar,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import logo from "../../../Images/logo.png";
+import './Header.css'
 
 const Header = () => {
+
     const { user, logOut } = useAuth();
+<<<<<<< HEAD
+=======
+
+    const navigate = useNavigate()
+
+>>>>>>> 48c14a8a5254694cd3905c18f80c52398c5af4d4
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"           sticky="top">
             <Container>
@@ -49,18 +58,36 @@ const Header = () => {
                             </Button>
                         </Link>
                     </Nav>
-                    <Nav>
-                        <Link to="/postjob">
-                            <Button className="m-2">Post A Job</Button>
-                        </Link>
+                    <Nav className="d-flex">
                         {!user ? (
                             <Link to="/login">
                                 <Button className="m-2">Login</Button>
                             </Link>
                         ) :
-                            <div className="w-25">
-                                <img src={user?.photoURL} alt="" style={{ width: '100%', borderRadius: '50%' }} />
-                            </div>
+                            <>
+                                <Dropdown align='end' as={ButtonGroup} className='mx-auto d-flex flex-column'>
+
+                                    <div className="toggle-container">
+                                        <div className="dp-container">
+                                            <img src={user?.photoURL} alt="" className="dp" />
+                                        </div>
+
+                                        <Dropdown.Toggle className="dd-toggle" variant="dark" />
+                                    </div>
+
+                                    <Dropdown.Menu variant='dark'>
+
+                                        <Dropdown.Item onClick={() => navigate('/profile')}>My Profile</Dropdown.Item>
+
+                                        <Dropdown.Item onClick={() => navigate('/postjob')}>Post A Job</Dropdown.Item>
+
+                                        <Dropdown.Divider />
+
+                                        <Dropdown.Item onClick={logOut}>Log Out</Dropdown.Item>
+
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            </>
                         }
                     </Nav>
                 </Navbar.Collapse>
