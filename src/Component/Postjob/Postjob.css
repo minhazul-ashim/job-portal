@@ -1,0 +1,12 @@
+.post-job-img {
+    background-image: url("../../Images/post-job.jpg");
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .post-job-img {
+        width: 100%;
+    }
+}

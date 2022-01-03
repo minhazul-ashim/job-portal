@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
-<<<<<<< HEAD
-import { Alert, Button, Container} from "react-bootstrap";
-=======
 import { Alert, Button, Col, Container, Row } from "react-bootstrap";
 import {
     AiFillFacebook,
     AiFillLinkedin,
     AiFillTwitterSquare,
 } from "react-icons/ai";
->>>>>>> Hridoy
 
 const Contact = () => {
     const [success, setSuccess] = useState(false);
@@ -36,7 +32,7 @@ const Contact = () => {
         <Container className="pt-4">
             <div className="contact-form text-start">
                 <form className="w-50" onSubmit={sendEmail}>
-                    <h2 className="text-primary fw-bold">Contact with us</h2>
+                    <h2 className="text-primary fw-bold py-2">Contact with us</h2>
                     <input
                         type="text"
                         name="name"
