@@ -13,10 +13,14 @@ import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import Register from './Component/Register/Register';
 import Footer from './Component/Shared/Footer/Footer';
 import Header from './Component/Shared/Header/Header';
+import UserProfile from './Component/UserProfile/UserProfile';
 
 function App() {
+
   return (
+
     <div className="App">
+
       <BrowserRouter>
         <Header />
         <Routes>
@@ -30,9 +34,11 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/postjob" element={<Postjob />} />
+          <Route path="/profile" element={<UserProfile />} />
         </Routes>
         <Footer />
       </BrowserRouter>
+
     </div>
   );
 }

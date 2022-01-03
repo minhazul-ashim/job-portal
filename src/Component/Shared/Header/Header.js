@@ -80,7 +80,7 @@ const Header = () => {
 
                                     <Dropdown.Menu variant='dark'>
 
-                                        <Dropdown.Item>My Profile</Dropdown.Item>
+                                        <Dropdown.Item onClick={() => navigate('/profile')}>My Profile</Dropdown.Item>
 
                                         <Dropdown.Item onClick={() => navigate('/postjob')}>Post A Job</Dropdown.Item>
 
