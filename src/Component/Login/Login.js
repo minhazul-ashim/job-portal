@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Login.css';
 import bgImage from '../../Images/register -page.jpg'
 import { Button, Form } from 'react-bootstrap';
@@ -6,6 +6,8 @@ import logo from '../../Images/logo.png'
 import useAuth from '../../hooks/useAuth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc'
+import { useDispatch,useSelector} from 'react-redux';
+import { getJobs } from '../../features/slices/jobSlice';
 
 const Login = () => {
 
@@ -40,7 +42,7 @@ const Login = () => {
 
         setLoginInfo(previousInfo)
     }
-
+    
     return (
         <div className='register-bg'>
             <img src={bgImage} className='register-img' alt="" />

@@ -1,22 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { getJobs } from '../../../features/slices/jobSlice';
 import './Jobs.css';
 
 const Jobs = () => {
-    const [allJobs,setAllJobs]=useState([])
+    const jobs=useSelector(state=>state.jobs.jobs);
+    const dispatch=useDispatch();
     useEffect(()=>{
-        fetch('http://localhost:5000/browseJobs')
-        .then(res=>res.json())
-        .then(data=>setAllJobs(data))
+        dispatch(getJobs())
     },[])
-    console.log(allJobs);
+
     return (
         <Container className="mb-5">
             <Row>
                 <Col lg={12} md={12} sm={12}>
                 {
-                   allJobs.map(job=>
+                   jobs.map(job=>
                     <div className="d-flex justify-content-between my-3 p-3 jobRow" key={job._id}>
                         <div className="d-flex align-items-center text-start">
                             <div className="thumb">

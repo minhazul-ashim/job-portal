@@ -30,7 +30,7 @@ export const getJobs = createAsyncThunk(
 
     async () => {
 
-        const response = await fetch('http://localhost:5000/jobs')
+        const response = await fetch('http://localhost:5000/browseJobs')
             .then(res => res.json())
 
         return response

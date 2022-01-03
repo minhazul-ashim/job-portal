@@ -11,3 +11,14 @@
     padding: 14px;
     border-radius: 8px;
 }
+
+@media screen and (max-width:559px){
+    .thumb{
+        display: none;
+    }
+}
+@media screen and (max-width:485px){
+    .job-info{
+        width: 100%;
+    }
+}

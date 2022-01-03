@@ -15,14 +15,9 @@ import './Header.css'
 const Header = () => {
 
     const { user, logOut } = useAuth();
-<<<<<<< HEAD
-=======
-
-    const navigate = useNavigate()
-
->>>>>>> 48c14a8a5254694cd3905c18f80c52398c5af4d4
+    const navigate=useNavigate();
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"           sticky="top">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Container>
                 <Navbar.Brand>
                     <Link to="/home">
