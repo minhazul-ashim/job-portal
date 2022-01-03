@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
-import { Alert, Button, Container } from "react-bootstrap";
+import { Alert, Button, Container} from "react-bootstrap";
 
 const Contact = () => {
     const [success, setSuccess] = useState(false);
