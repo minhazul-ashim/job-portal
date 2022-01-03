@@ -50,7 +50,7 @@ const userDataSlice = createSlice({
             // console.log(action)
         })
 
-        builder.addCase(getUserData, (state, action) => {
+        builder.addCase(getUserData.fulfilled, (state, action) => {
 
             state.user = action.payload
         })

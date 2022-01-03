@@ -14,6 +14,10 @@ import Register from './Component/Register/Register';
 import Footer from './Component/Shared/Footer/Footer';
 import Header from './Component/Shared/Header/Header';
 import UserProfile from './Component/UserProfile/UserProfile';
+import UserInfo from './Component/UserInfo/UserInfo';
+import UserPosts from './Component/UserPosts/UserPosts';
+import UserJobs from './Component/UserJobs/UserJobs';
+
 
 function App() {
 
@@ -27,14 +31,30 @@ function App() {
           <Route path="/*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/browseJobs" element={<BrowseJobs/>} />
+          <Route path="/browseJobs" element={<BrowseJobs />} />
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<PrivateRoute><Blogs></Blogs></PrivateRoute>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/postjob" element={<Postjob />} />
-          <Route path="/profile" element={<UserProfile />} />
+
+          <Route path="/profile" element={<UserProfile />}>
+
+            <Route path='/profile/user-info' element={<UserInfo />}>
+
+            </Route>
+
+            <Route path='/profile/user-jobs' element={<UserJobs/>}>
+
+            </Route>
+
+            <Route path='/profile/user-posts' element={<UserPosts/>}>
+
+            </Route>
+
+          </Route>
+
         </Routes>
         <Footer />
       </BrowserRouter>
