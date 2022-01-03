@@ -29,7 +29,7 @@ const Contact = () => {
     };
 
     return (
-        <Container className="pt-4">
+        <Container>
             <div className="contact-form text-start">
                 <form className="w-50" onSubmit={sendEmail}>
                     <h2 className="text-primary fw-bold py-2">Contact with us</h2>
