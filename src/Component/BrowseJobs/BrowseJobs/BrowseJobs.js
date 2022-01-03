@@ -1,45 +1,33 @@
 import React from 'react';
-import { Button, Col, Container, FormControl, InputGroup, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { Link, Route, Routes } from 'react-router-dom';
+import Search from '../../Home/Search/Search';
 import Jobs from '../Jobs/Jobs';
 import './BrowseJobs.css';
 
 const BrowseJobs = () => {
     return (
         <Container>
-            <h1>Discover jobs for you</h1>
+            <h1 className="mt-3">Discover jobs for you</h1>
             <h5 className="text-primary mb-5">Browse 4536+ Top Jobs In all World</h5>
-            <Row>
-                <Col xs={12} md={12} lg={6} className="mx-auto">
-                    <InputGroup className="my-3">
-                        <FormControl placeholder="Search By Job Title" style={{borderRadius:"300px",marginright:"5px", padding:"8px", paddingLeft:"30px"}}/>
-                        <Button style={{borderRadius:"300px",marginLeft:"5px"}}>Search Job</Button>
-                    </InputGroup>
-                </Col>
-            </Row>
+            <Search/>
             <div className="mb-5 mt-3 jobCategory">
                 <Link to="/browseJobs">
                     All Jobs
                 </Link>
                 <Link to="/browseJobs">
-                    Creative & Art
+                    Remote
                 </Link>
                 <Link to="/browseJobs">
-                    Programming & IT
+                    On-Site
                 </Link>
                 <Link to="/browseJobs">
-                    Corporate
+                    Part Time
                 </Link>
                 <Link to="/browseJobs">
-                    Finance
+                    Full-Time
                 </Link>
-                <Link to="/browseJobs">
-                    Medical
-                </Link>
-                <Link to="/browseJobs">
-                    Marketing
-                </Link>
-               <hr className="w-75 mx-auto"/>
+               <hr className="w-50 mx-auto"/>
             </div>
              <div>
                 <Routes>

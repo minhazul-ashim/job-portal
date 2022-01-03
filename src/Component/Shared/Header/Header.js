@@ -12,8 +12,6 @@ import logo from "../../../Images/logo.png";
 
 const Header = () => {
     const { user, logOut } = useAuth();
-    console.log(user);
-
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"           sticky="top">
             <Container>
