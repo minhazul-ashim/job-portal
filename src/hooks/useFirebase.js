@@ -20,6 +20,8 @@ const useFirebase = () => {
 
         signInWithPopup(auth, googleProvider)
             .then(result => {
+
+                setLoading(false)
                 navigate(from, { replace: true })
                 setUser(result.user)
             })
@@ -38,6 +40,7 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
 
+                setLoading(false)
                 updateProfile(auth.currentUser, {
 
                     displayName: name
@@ -50,11 +53,11 @@ const useFirebase = () => {
 
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-
-                navigate(from, {replace: true})
-             })
+                setLoading(false)
+                navigate(from, { replace: true })
+            })
             .catch(error => {
-                
+
                 setError(error.message)
             })
     }
@@ -64,9 +67,13 @@ const useFirebase = () => {
         onAuthStateChanged(auth, user => {
 
             if (user) {
+
                 setUser(user)
+                setLoading(false)
             } else {
+
                 setUser(null)
+                setLoading(false)
             }
         })
     }, [])
