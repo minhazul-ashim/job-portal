@@ -5,12 +5,13 @@ import HomeJob from '../HomeJob/HomeJob';
 import Search from '../Search/Search';
 
 const Home = () => {
+
     return (
         <div>
-            <Banner/>
-            <Search/>
-            <HomeJob/>
-            <Feature/>
+            <Banner />
+            <Search />
+            <HomeJob />
+            <Feature />
         </div>
     );
 };
