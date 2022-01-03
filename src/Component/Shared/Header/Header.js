@@ -65,26 +65,11 @@ const Header = () => {
                             <Link to="/login">
                                 <Button className="m-2">Login</Button>
                             </Link>
-                        ) : (
-                            <Dropdown>
-                                <Dropdown.Toggle className="w-100">
-                                    <img
-                                        src={user?.photoURL}
-                                        alt=""
-                                        className="w-50"
-                                    />
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu variant="dark">
-                                    <Dropdown.Item>
-                                        {user?.displayName}
-                                    </Dropdown.Item>
-                                    <Dropdown.Item>{user?.email}</Dropdown.Item>
-                                    <Button className="m-2" onClick={logOut}>
-                                        Log out
-                                    </Button>
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        )}
+                        ) :
+                            <div className="w-25">
+                                <img src={user?.photoURL} alt="" style={{ width: '100%', borderRadius: '50%' }} />
+                            </div>
+                        }
                     </Nav>
                 </Navbar.Collapse>
             </Container>

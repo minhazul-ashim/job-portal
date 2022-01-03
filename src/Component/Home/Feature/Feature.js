@@ -28,7 +28,7 @@ const Feature = () => {
             className="mySwiper mx-5">
             {
             features.map(feature=>
-                <SwiperSlide className="shadow-lg my-4 rounded-3 py-5" key={feature._id}>
+                <SwiperSlide className="shadow-lg my-4 rounded-3 py-5" key={feature.name}>
                     <img className="w-50" src={feature.photo} alt="FeatureEmployee" />
                     <h5 className="mt-4">{feature.name}</h5>
                     <span className="text-secondary">{feature.designation}</span>                            
