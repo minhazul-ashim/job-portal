@@ -40,29 +40,32 @@ const JobDetails = () => {
                 <p>Posting Date: {details.postingDate}</p>
                 <p className="jobDescription text-secondary mt-4">{details.desc}</p>
                 <p className="text-secondary">Deadline: {details.deadline}</p>
+
                 <div className="mt-5">
-                    <Row>
-                        <Col lg={6} md={12}>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Control type="name" placeholder="Your Name" className="py-3" />
-                            </Form.Group>
-                        </Col>
-                        <Col lg={6} md={12}>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Control type="email" placeholder="Enter email"className="py-3"/>
-                            </Form.Group>
-                        </Col>
-                    </Row>
-                    <Form.Group controlId="formFile" className="mb-3">
-                        <Form.Label>Upload Resume</Form.Label>
-                        <Form.Control type="file"/>
-                    </Form.Group>
-                    <Form.Control type="text" placeholder="Your Portfolio Link" className="py-3"/>
-                    <FloatingLabel controlId="floatingTextarea2" label="Cover Letter" className="mt-3">
-                        <Form.Control as="textarea" style={{ height: '200px'}}/>
-                    </FloatingLabel>
+                    <Form>
+                        <Row>
+                            <Col lg={6} md={12}>
+                                <Form.Group className="mb-3" controlId="formBasicName">
+                                    <Form.Control type="name" placeholder="Your Name" className="py-3" required />
+                                </Form.Group>
+                            </Col>
+                            <Col lg={6} md={12}>
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Control type="email" placeholder="Enter email"className="py-3" required/>
+                                </Form.Group>
+                            </Col>
+                        </Row>
+                        <Form.Group controlId="formFile" className="mb-3">
+                            <Form.Label>Upload Resume</Form.Label>
+                            <Form.Control type="file" required/>
+                        </Form.Group>
+                            <Form.Control type="text" placeholder="Your Portfolio Link" className="py-3"/>
+                            <FloatingLabel controlId="floatingTextarea2" label="Cover Letter" className="mt-3">
+                            <Form.Control as="textarea" style={{ height: '200px'}}/>
+                        </FloatingLabel> 
+                        <input type="submit" value="Apply Now" className="btn btn-success mt-3 py-2 px-5"/>
+                    </Form>
                 </div>
-                <Button variant="success mt-3 w-25 py-3">Apply Now</Button>
             </div>
         </Container>
     );
