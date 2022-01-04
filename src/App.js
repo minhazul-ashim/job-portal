@@ -17,6 +17,7 @@ import UserProfile from './Component/UserProfile/UserProfile';
 import UserInfo from './Component/UserInfo/UserInfo';
 import UserPosts from './Component/UserPosts/UserPosts';
 import UserJobs from './Component/UserJobs/UserJobs';
+import JobDetails from './Component/JobDetails/JobDetails';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="browseJobs/*" element={<BrowseJobs />} />
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<PrivateRoute><Blogs></Blogs></PrivateRoute>} />
+          <Route path="jobDetails/:productId" element={<PrivateRoute> <JobDetails/> </PrivateRoute>}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

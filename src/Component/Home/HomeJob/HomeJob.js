@@ -41,7 +41,7 @@ const HomeJob = () => {
                         </div>
                         <div className="d-flex align-items-center">
                             <div>
-                                <Link to="/"> 
+                                <Link to={`/jobDetails/${job._id}`}> 
                                     <Button variant="success">Apply Now</Button>
                                 </Link>
                                 <p className="text-secondary mt-2">Deadline: {job.deadline}</p>
