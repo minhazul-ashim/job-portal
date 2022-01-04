@@ -9,7 +9,7 @@ export const postUserData = createAsyncThunk(
     'user/postUser',
     async (data) => {
 
-        const response = await fetch('http://localhost:5000/users', {
+        const response = await fetch('https://boiling-anchorage-13800.herokuapp.com/users', {
             method: 'PUT',
             headers: {
                 "content-type": "application/json"
@@ -26,7 +26,7 @@ export const getUserData = createAsyncThunk(
     'user/Profile',
     async (email) => {
 
-        const response = await fetch(`http://localhost:5000/user?email=${email}`)
+        const response = await fetch(`https://boiling-anchorage-13800.herokuapp.com/user?email=${email}`)
             .then(res => res.json())
 
         return response

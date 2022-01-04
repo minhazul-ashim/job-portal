@@ -10,7 +10,7 @@ const JobDetails = () => {
     const [details,setDetails]=useState({})
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/jobDetails/${productId}`)
+        fetch(`https://boiling-anchorage-13800.herokuapp.com/${productId}`)
         .then(res=>res.json())
         .then(data=>setDetails(data))
     },[]);
