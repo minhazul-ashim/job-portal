@@ -2,7 +2,11 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link, Route, Routes } from 'react-router-dom';
 import Search from '../../Home/Search/Search';
+import FullTime from '../FullTime/FullTime';
 import Jobs from '../Jobs/Jobs';
+import OnSite from '../OnSite/OnSite';
+import PartTime from '../PartTime/PartTime';
+import Remote from '../Remote/Remote';
 import './BrowseJobs.css';
 
 const BrowseJobs = () => {
@@ -15,16 +19,16 @@ const BrowseJobs = () => {
                 <Link to="/browseJobs">
                     All Jobs
                 </Link>
-                <Link to="/browseJobs">
-                    Remote
-                </Link>
-                <Link to="/browseJobs">
+                <Link to="onsite">
                     On-Site
                 </Link>
-                <Link to="/browseJobs">
+                <Link to="remote">
+                    Remote
+                </Link>
+                <Link to="partTime">
                     Part Time
                 </Link>
-                <Link to="/browseJobs">
+                <Link to="fullTime">
                     Full-Time
                 </Link>
                <hr className="w-50 mx-auto"/>
@@ -32,6 +36,10 @@ const BrowseJobs = () => {
              <div>
                 <Routes>
                     <Route path="/" element={<Jobs />}/>
+                    <Route path="onsite" element={<OnSite />}/>
+                    <Route path="remote" element={<Remote />}/>
+                    <Route path="partTime" element={<PartTime />}/>
+                    <Route path="fullTime" element={<FullTime />}/>
                 </Routes>
              </div>
         </Container>
