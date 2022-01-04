@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Col, Container, FloatingLabel, Form, FormControl, InputGroup, Row } from 'react-bootstrap';
+import { Col, Container, FloatingLabel, Form, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import swal from 'sweetalert';
 import './Jobdetails.css';
