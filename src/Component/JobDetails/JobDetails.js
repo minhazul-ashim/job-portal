@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Col, Container, FloatingLabel, Form, FormControl, InputGroup, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import swal from 'sweetalert';
 import './Jobdetails.css';
 
 const JobDetails = () => {
@@ -13,6 +14,11 @@ const JobDetails = () => {
         .then(res=>res.json())
         .then(data=>setDetails(data))
     },[]);
+
+    const handleSubmiit=(e)=>{
+        e.preventDefault();
+        swal("Applied Successfull!", "We will contact you soon");
+    }
 
     return (
         <Container>
@@ -42,7 +48,7 @@ const JobDetails = () => {
                 <p className="text-secondary">Deadline: {details.deadline}</p>
 
                 <div className="mt-5">
-                    <Form>
+                    <Form onSubmit={handleSubmiit}>
                         <Row>
                             <Col lg={6} md={12}>
                                 <Form.Group className="mb-3" controlId="formBasicName">
