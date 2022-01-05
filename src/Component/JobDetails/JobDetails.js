@@ -10,11 +10,11 @@ const JobDetails = () => {
     const [details,setDetails]=useState({})
 
     useEffect(()=>{
-        fetch(`https://boiling-anchorage-13800.herokuapp.com/${productId}`)
+        fetch(`https://boiling-anchorage-13800.herokuapp.com/jobDetails/${productId}`)
         .then(res=>res.json())
         .then(data=>setDetails(data))
     },[]);
-
+ 
     const handleSubmiit=(e)=>{
         e.preventDefault();
         swal("Applied Successfull!", "We will contact you soon");
