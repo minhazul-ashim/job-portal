@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 const UserPosts = () => {
 
-    const postedJobs = useSelector(state => state.user.user.postedJobs)
+    const postedJobs = useSelector(state => state.user.user?.postedJobs)
 
     console.log(postedJobs)
 

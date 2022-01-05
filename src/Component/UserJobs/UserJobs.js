@@ -3,7 +3,9 @@ import { useSelector } from 'react-redux';
 
 const UserJobs = () => {
 
-    const appliedJobs = useSelector(state => state.user.user.appliedJobs)
+    const appliedJobs = useSelector(state => state.user.user?.appliedJobs)
+
+    console.log(appliedJobs)
 
     return (
         <div>
