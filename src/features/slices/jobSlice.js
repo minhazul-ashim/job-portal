@@ -52,13 +52,13 @@ export const getSelectedJob = createAsyncThunk(
 export const postCandidateInfo = createAsyncThunk(
     'jobs/CandidateInfo',
 
-    async (props) => {
+    async ({ formData, productId, email }) => {
 
-        console.log(data)
+        console.log(formData, productId)
 
-        const response = await fetch(`http://localhost:5000/jobs/application/${props.id}`, {
+        const response = await fetch(`http://localhost:5000/jobs/application?id=${productId}&email=${email}`, {
             method: 'POST',
-            body: props.data
+            body: formData
         })
             .then(res => res.json())
 

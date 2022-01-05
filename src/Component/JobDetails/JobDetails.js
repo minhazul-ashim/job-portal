@@ -1,15 +1,20 @@
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, FloatingLabel, Form, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import swal from 'sweetalert';
 import { getSelectedJob, postCandidateInfo } from '../../features/slices/jobSlice';
+import useAuth from '../../hooks/useAuth';
 import './Jobdetails.css';
 
 const JobDetails = () => {
 
     const { productId } = useParams();
+
+    const { user } = useAuth()
+
+    const { email } = user;
 
     const details = useSelector(state => state.jobs.selectedJob)
 
@@ -27,7 +32,7 @@ const JobDetails = () => {
 
         const formData = new FormData(myForm)
 
-        dispatch(postCandidateInfo(formData))
+        dispatch(postCandidateInfo({ formData, productId, email }))
 
         e.preventDefault();
         swal(`Applied Successfully! Hold Tight! Recruiters will contact you soon`);
@@ -76,11 +81,11 @@ const JobDetails = () => {
                         </Row>
                         <Form.Group controlId="formFile" className="mb-3">
                             <Form.Label>Upload Resume</Form.Label>
-                            <Form.Control type="file" required name='candidateResume'/>
+                            <Form.Control type="file" required name='candidateResume' />
                         </Form.Group>
-                        <Form.Control type="text" placeholder="Your Portfolio Link" name='candidatePortfolio' className="py-3"/>
+                        <Form.Control type="text" placeholder="Your Portfolio Link" name='candidatePortfolio' className="py-3" />
                         <FloatingLabel controlId="floatingTextarea2" label="Cover Letter" className="mt-3">
-                            <Form.Control as="textarea" style={{ height: '200px' }} name='candidateCoverLetter'/>
+                            <Form.Control as="textarea" style={{ height: '200px' }} name='candidateCoverLetter' />
                         </FloatingLabel>
                         <input type="submit" value="Apply Now" className="btn btn-success mt-3 py-2 px-5" />
                     </Form>
