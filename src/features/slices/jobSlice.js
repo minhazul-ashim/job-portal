@@ -20,7 +20,7 @@ export const postJob = createAsyncThunk(
             body: JSON.stringify(rest)
         })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => {})
 
         return response.data
     }
@@ -96,7 +96,7 @@ const jobSlice = createSlice({
 
             builder.addCase(postCandidateInfo.fulfilled, (state, action) => {
 
-                console.log(action)
+                // console.log(action)
             })
         }
 })
