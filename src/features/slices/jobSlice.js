@@ -2,7 +2,8 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
 
-    jobs: []
+    jobs: [],
+    selectedJob : {},
 }
 
 export const postJob = createAsyncThunk(
@@ -37,6 +38,17 @@ export const getJobs = createAsyncThunk(
     }
 )
 
+export const getSelectedJob = createAsyncThunk(
+    'jobs/selectedJob',
+    async (id) => {
+
+        const response = await fetch(`https://boiling-anchorage-13800.herokuapp.com/jobDetails/${id}`)
+            .then(res => res.json())
+
+        return response;
+    }
+)
+
 const jobSlice = createSlice({
 
     name: 'Jobs',
@@ -58,6 +70,11 @@ const jobSlice = createSlice({
             builder.addCase(getJobs.fulfilled, (state, action) => {
 
                 state.jobs = action.payload
+            })
+
+            builder.addCase(getSelectedJob.fulfilled, (state, action) => {
+
+                state.selectedJob = action.payload
             })
         }
 })

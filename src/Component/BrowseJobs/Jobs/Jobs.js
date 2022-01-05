@@ -6,8 +6,11 @@ import { getJobs } from '../../../features/slices/jobSlice';
 import './Jobs.css';
 
 const Jobs = () => {
+
     const jobs=useSelector(state=>state.jobs.jobs);
+
     const dispatch=useDispatch();
+    
     useEffect(()=>{
         dispatch(getJobs())
     },[])
