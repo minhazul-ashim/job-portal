@@ -52,6 +52,7 @@ const HomeJob = () => {
                 }
                 </Col>
             </Row>
+            <Link to="/browseJobs"> <Button variant="primary">View All Jobs</Button> </Link>
         </Container>
     );
 };
