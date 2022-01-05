@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 
 const UserJobs = () => {
@@ -8,9 +9,27 @@ const UserJobs = () => {
     console.log(appliedJobs)
 
     return (
-        <div>
-            <h1>This is user jobs</h1>
-        </div>
+        <Container>
+        {
+            appliedJobs.map(appliedJob=>
+            <div className="text-start" key={appliedJob._id}>
+                <h3>Position: {appliedJob.title}</h3>
+                <h5>Company: {appliedJob.company}</h5>
+                <div className="d-flex text-secondary">
+                    <h6>Location: {appliedJob.location}</h6>
+                    <h6 className="ms-5">Posting Date: {appliedJob.postingDate}</h6>
+                </div>
+                <div className="d-flex">
+                    <h6>{appliedJob.job} ( {appliedJob.jobType} )</h6>
+                    <h6 className="text-danger ms-3">Deadline: {appliedJob.deadline}</h6>
+                    
+                </div>
+                    <h4 className="mt-3">Job Description</h4>
+                    <p className="text-secondary">{appliedJob.desc}</p>
+            </div>        
+        )
+        }
+        </Container>
     );
 };
 
