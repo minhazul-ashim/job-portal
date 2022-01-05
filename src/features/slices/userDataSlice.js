@@ -26,7 +26,7 @@ export const getUserData = createAsyncThunk(
     'user/Profile',
     async (email) => {
 
-        const response = await fetch(`https://boiling-anchorage-13800.herokuapp.com/user?email=${email}`)
+        const response = await fetch(`https://boiling-anchorage-13800.herokuapp.com/users?email=${email}`)
             .then(res => res.json())
 
         return response

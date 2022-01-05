@@ -12,7 +12,7 @@ export const postJob = createAsyncThunk(
 
         const { email, ...rest } = data
 
-        const response = await fetch(`https://boiling-anchorage-13800.herokuapp.com/jobs?email=${email}`, {
+        const response = await fetch(`http://localhost:5000/jobs?email=${email}`, {
             method: 'POST',
             headers: {
                 "content-type": "application/json"
@@ -20,7 +20,7 @@ export const postJob = createAsyncThunk(
             body: JSON.stringify(rest)
         })
             .then(res => res.json())
-            .then(data => {})
+            .then(data => { })
 
         return response.data
     }

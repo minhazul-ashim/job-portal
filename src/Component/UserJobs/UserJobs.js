@@ -1,6 +1,10 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 const UserJobs = () => {
+
+    const appliedJobs = useSelector(state => state.user.user.appliedJobs)
+
     return (
         <div>
             <h1>This is user jobs</h1>

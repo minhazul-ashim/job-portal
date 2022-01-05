@@ -8,22 +8,22 @@ import './Jobs.css';
 
 const Jobs = () => {
 
-    const jobs=useSelector(state=>state.jobs.jobs);
+    const jobs = useSelector(state => state.jobs.jobs);
 
-    const dispatch=useDispatch();
-    
-    useEffect(()=>{
+    const dispatch = useDispatch();
+
+    useEffect(() => {
         dispatch(getJobs())
-    },[])
+    }, [])
 
     return (
         <Container className="mb-5">
             <Row>
                 <Col lg={12} md={12} sm={12}>
-                {
-                   jobs.map(job=><JobBox job={job} />
-                    ) 
-                }
+                    {
+                        jobs.map(job => <JobBox key={job._id} job={job} />
+                        )
+                    }
                 </Col>
             </Row>
         </Container>
