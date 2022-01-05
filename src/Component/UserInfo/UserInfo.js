@@ -8,8 +8,9 @@ const UserInfo = () => {
     console.log(user)
 
     return (
-        <div>
-            <h1>This is user info</h1>
+        <div className="text-start m-2">
+            <h4>Name: {user.name}</h4>
+            <h5 className="text-secondary">Email: {user.email}</h5>
         </div>
     );
 };
