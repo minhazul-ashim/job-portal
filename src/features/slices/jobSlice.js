@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 const initialState = {
 
     jobs: [],
-    selectedJob : {},
+    selectedJob: {},
 }
 
 export const postJob = createAsyncThunk(
@@ -49,6 +49,23 @@ export const getSelectedJob = createAsyncThunk(
     }
 )
 
+export const postCandidateInfo = createAsyncThunk(
+    'jobs/CandidateInfo',
+
+    async ({ formData, productId, email }) => {
+
+        console.log(formData, productId)
+
+        const response = await fetch(`http://localhost:5000/jobs/application?id=${productId}&email=${email}`, {
+            method: 'POST',
+            body: formData
+        })
+            .then(res => res.json())
+
+        return response
+    }
+)
+
 const jobSlice = createSlice({
 
     name: 'Jobs',
@@ -75,6 +92,11 @@ const jobSlice = createSlice({
             builder.addCase(getSelectedJob.fulfilled, (state, action) => {
 
                 state.selectedJob = action.payload
+            })
+
+            builder.addCase(postCandidateInfo.fulfilled, (state, action) => {
+
+                console.log(action)
             })
         }
 })
