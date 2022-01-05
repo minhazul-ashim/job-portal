@@ -5,8 +5,6 @@ const UserInfo = () => {
 
     const user = useSelector(state => state.user.user)
 
-    console.log(user)
-
     return (
         <div className="text-start m-2">
             <h4>Name: {user.name}</h4>
