@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 const UserJobs = () => {
 
     const appliedJobs = useSelector(state => state.user.user?.appliedJobs)
+    
     const loadDescription=()=>{
         alert("Description Will Be Added. Just wait")
     }

@@ -18,6 +18,7 @@ const UserProfile = () => {
     useEffect(() => {
 
         dispatch(getUserData(user?.email))
+        
     }, [user])
 
     return (
@@ -32,7 +33,7 @@ const UserProfile = () => {
                             Applied Jobs
                         </ListGroupItem>
                         <ListGroupItem onClick={() => navigate('/profile/user-posts')}>
-                            Jobs Postted
+                            Jobs Posted
                         </ListGroupItem>
                     </ListGroup>
                 </Col>

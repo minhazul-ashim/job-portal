@@ -7,8 +7,8 @@ const UserInfo = () => {
 
     return (
         <div className="text-start m-2">
-            <h4>Name: {user.name}</h4>
-            <h5 className="text-secondary">Email: {user.email}</h5>
+            <h4>Name: {user?.name}</h4>
+            <h5 className="text-secondary">Email: {user?.email}</h5>
         </div>
     );
 };
