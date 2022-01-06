@@ -41,7 +41,7 @@ const Footer = () => {
                     </Col>
                 </Row>
                 <hr className="text-light mt-3" />
-                <small className="text-light">&copy; All rights are reserved.</small>
+                <small className="text-light">&copy; All Rights Reserved.</small>
             </Container>
         </div>
     );
