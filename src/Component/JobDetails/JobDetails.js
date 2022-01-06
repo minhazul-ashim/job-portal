@@ -7,6 +7,7 @@ import swal from 'sweetalert';
 import { getSelectedJob, postCandidateInfo } from '../../features/slices/jobSlice';
 import useAuth from '../../hooks/useAuth';
 import './Jobdetails.css';
+import logo from '../../Images/logo.png'
 
 const JobDetails = () => {
 
@@ -42,7 +43,7 @@ const JobDetails = () => {
         <Container>
             <div className="d-flex align-items-center text-start p-5 shadow-lg rounded-3 mt-4">
                 <div className="thumb">
-                    <img className="w-100 companyLogo" src={details.logo} alt="Company Logo" />
+                    <img className="w-100 companyLogo" src={logo} alt="Company Logo" />
                 </div>
                 <div className="ms-4">
                     <h4>{details.title}</h4>
