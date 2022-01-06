@@ -1,9 +1,18 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { postBookmark } from '../../features/slices/userDataSlice';
+import useAuth from '../../hooks/useAuth';
 import logo from '../../Images/logo.png'
 
 const JobBox = ({ job, home }) => {
+
+    const { user } = useAuth()
+
+    const email = user?.email
+
+    const dispatch = useDispatch()
 
     const navigate = useNavigate()
 
@@ -40,11 +49,15 @@ const JobBox = ({ job, home }) => {
                                     onClick={() => navigate(`/jobDetails/${job._id}`)}>
                                     Apply Now
                                 </Button>
-                                <Button>
+                                <Button
+                                    onClick={() => dispatch(postBookmark({ email, job }))}>
                                     Bookmark
                                 </Button>
                             </> :
                             <>
+                                <Button onClick={() => navigate(`/jobDetails/${job._id}`)}>
+                                    Detail
+                                </Button>
                                 <Button>
                                     Unmark
                                 </Button>

@@ -22,6 +22,23 @@ export const postUserData = createAsyncThunk(
     }
 )
 
+export const postBookmark = createAsyncThunk(
+    'user/bookmarks',
+    async ({ email, job }) => {
+
+        const response = await fetch(`http://localhost:5000/user/bookmark?email=${email}`, {
+            method: 'PUT',
+            headers: {
+                "content-type": 'application/json'
+            },
+            body: JSON.stringify(job)
+        })
+            .then(res => res.json())
+
+        return response
+    }
+)
+
 export const getUserData = createAsyncThunk(
     'user/Profile',
     async (email) => {
@@ -53,6 +70,11 @@ const userDataSlice = createSlice({
         builder.addCase(getUserData.fulfilled, (state, action) => {
 
             state.user = action.payload
+        })
+
+        builder.addCase(postBookmark.fulfilled, (state, action) => {
+
+            console.log(action)
         })
     }
 })
