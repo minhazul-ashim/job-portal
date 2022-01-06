@@ -5,11 +5,15 @@ import { Link } from 'react-router-dom';
 import { getJobs } from '../../../features/slices/jobSlice';
 
 const FullTime = () => {
+
     const jobs=useSelector(state=>state.jobs.jobs);
+
     const dispatch=useDispatch();
+
     useEffect(()=>{
         dispatch(getJobs())
     },[])
+    
     return (
         <Container className="mb-5">
         <Row>

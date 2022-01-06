@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { getJobs } from '../../../features/slices/jobSlice';
 import JobBox from '../../JobBox/JobBox';
 import './Jobs.css';
@@ -13,7 +12,9 @@ const Jobs = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
+
         dispatch(getJobs())
+
     }, [])
 
     return (
