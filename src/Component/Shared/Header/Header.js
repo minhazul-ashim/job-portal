@@ -15,7 +15,7 @@ import './Header.css'
 const Header = () => {
 
     const { user, logOut } = useAuth();
-    const navigate=useNavigate();
+    const navigate = useNavigate();
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Container>
@@ -74,7 +74,7 @@ const Header = () => {
 
                                         <Dropdown.Item onClick={() => navigate('/profile')}>My Profile</Dropdown.Item>
 
-                                        <Dropdown.Item onClick={() => navigate('/postjob')}>Post A Job</Dropdown.Item>
+                                        <Dropdown.Item onClick={() => navigate('/postjob')}>Post Job</Dropdown.Item>
 
                                         <Dropdown.Divider />
 

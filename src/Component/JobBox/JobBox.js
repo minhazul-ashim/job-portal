@@ -2,11 +2,11 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { postBookmark } from '../../features/slices/userDataSlice';
+import { deleteBookmark, postBookmark } from '../../features/slices/userDataSlice';
 import useAuth from '../../hooks/useAuth';
 import logo from '../../Images/logo.png'
 
-const JobBox = ({ job, home }) => {
+const JobBox = ({ job, home, bookmark }) => {
 
     const { user } = useAuth()
 
@@ -38,6 +38,13 @@ const JobBox = ({ job, home }) => {
                     <div className="me-2">
                         <span>Job Type: {job.jobType}</span>
                     </div>
+                    {
+                        home ?
+                        <div className="me-2">
+                        <span>Candidates Applied: {job.candidates?.length || 0}</span>
+                    </div> :
+                    ''
+                    }
                 </div>
             </div>
             <div className="d-flex align-items-center">
@@ -49,18 +56,25 @@ const JobBox = ({ job, home }) => {
                                     onClick={() => navigate(`/jobDetails/${job._id}`)}>
                                     Apply Now
                                 </Button>
-                                <Button
+                                <Button variant="warning" className='btn btn-sm d-block mt-2'
                                     onClick={() => dispatch(postBookmark({ email, job }))}>
                                     Bookmark
                                 </Button>
                             </> :
                             <>
-                                <Button onClick={() => navigate(`/jobDetails/${job._id}`)}>
+                                <Button
+                                    variant="warning" className='btn btn-sm d-block'
+                                    onClick={() => navigate(`/jobDetails/${job._id}`)}>
                                     Detail
                                 </Button>
-                                <Button>
-                                    Unmark
-                                </Button>
+                                {
+                                    bookmark ?
+                                        <Button variant="success" className='btn btn-sm d-block mt-2'
+                                            onClick={() => dispatch(deleteBookmark({ email, job }))}>
+                                            Unmark
+                                        </Button> :
+                                        ''
+                                }
                             </>
                     }
                     <small className="text-danger mt-2 d-block">Deadline: {job.deadline}</small>
