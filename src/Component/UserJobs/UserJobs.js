@@ -10,6 +10,7 @@ const UserJobs = () => {
     }
 
     return (
+        
         <Container>
         {
             appliedJobs.map(appliedJob=>
