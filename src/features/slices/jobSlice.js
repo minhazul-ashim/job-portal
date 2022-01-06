@@ -12,7 +12,7 @@ export const postJob = createAsyncThunk(
 
         const { email, ...rest } = data
 
-        const response = await fetch(`http://localhost:5000/jobs?email=${email}`, {
+        const response = await fetch(`https://pure-earth-57563.herokuapp.com/jobs?email=${email}`, {
             method: 'POST',
             headers: {
                 "content-type": "application/json"
@@ -31,7 +31,7 @@ export const getJobs = createAsyncThunk(
 
     async () => {
 
-        const response = await fetch('https://boiling-anchorage-13800.herokuapp.com/browseJobs')
+        const response = await fetch('https://pure-earth-57563.herokuapp.com/browseJobs')
             .then(res => res.json())
 
         return response
@@ -42,7 +42,7 @@ export const getSelectedJob = createAsyncThunk(
     'jobs/selectedJob',
     async (id) => {
 
-        const response = await fetch(`https://boiling-anchorage-13800.herokuapp.com/jobDetails/${id}`)
+        const response = await fetch(`https://pure-earth-57563.herokuapp.com/jobDetails/${id}`)
             .then(res => res.json())
 
         return response;
@@ -56,7 +56,7 @@ export const postCandidateInfo = createAsyncThunk(
 
         console.log(formData, productId)
 
-        const response = await fetch(`http://localhost:5000/jobs/application?id=${productId}&email=${email}`, {
+        const response = await fetch(`https://pure-earth-57563.herokuapp.com/jobs/application?id=${productId}&email=${email}`, {
             method: 'POST',
             body: formData
         })
