@@ -20,12 +20,14 @@ const Jobs = () => {
     return (
         <Container className="mb-5">
             <Row>
+
                 <Col lg={12} md={12} sm={12}>
                     {
-                        jobs.map(job => <JobBox key={job._id} job={job} />
+                        jobs.map(job => <JobBox home={true} key={job._id} job={job} />
                         )
                     }
                 </Col>
+                
             </Row>
         </Container>
     );

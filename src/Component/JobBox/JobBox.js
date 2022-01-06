@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../Images/logo.png'
 
-const JobBox = ({ job }) => {
+const JobBox = ({ job, home }) => {
 
     const navigate = useNavigate()
 
@@ -33,8 +33,23 @@ const JobBox = ({ job }) => {
             </div>
             <div className="d-flex align-items-center">
                 <div>
-                    <Button variant="success" className='btn btn-sm d-block'
-                        onClick={() => navigate(`/jobDetails/${job._id}`)}>Apply Now</Button>
+                    {
+                        home ?
+                            <>
+                                <Button variant="success" className='btn btn-sm d-block'
+                                    onClick={() => navigate(`/jobDetails/${job._id}`)}>
+                                    Apply Now
+                                </Button>
+                                <Button>
+                                    Bookmark
+                                </Button>
+                            </> :
+                            <>
+                                <Button>
+                                    Unmark
+                                </Button>
+                            </>
+                    }
                     <small className="text-danger mt-2 d-block">Deadline: {job.deadline}</small>
                     <small className="text-secondary mt-2">Posted: {job.postingDate}</small>
                 </div>

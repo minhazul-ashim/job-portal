@@ -8,7 +8,7 @@ import './Jobdetails.css';
 import logo from '../../Images/logo.png'
 import ApplyForm from '../ApplyForm/ApplyForm';
 
-const JobDetails = () => {
+const JobDetails = ({ userProfile }) => {
 
     const { productId } = useParams();
 
@@ -49,7 +49,13 @@ const JobDetails = () => {
                 <p className="text-secondary">Deadline: {details.deadline}</p>
 
                 <div className="mt-5">
-                    <ApplyForm productId={productId} />
+                    {
+                        !userProfile ?
+                            <ApplyForm productId={productId} /> :
+                            <>
+
+                            </>
+                    }
                 </div>
             </div>
         </Container>

@@ -18,6 +18,7 @@ import UserInfo from './Component/UserInfo/UserInfo';
 import UserPosts from './Component/UserPosts/UserPosts';
 import UserJobs from './Component/UserJobs/UserJobs';
 import JobDetails from './Component/JobDetails/JobDetails';
+import Bookmark from './Component/Bookmark/Bookmark';
 
 
 function App() {
@@ -30,35 +31,44 @@ function App() {
         <Header />
         <Routes>
           <Route path="/*" element={<NotFound />} />
+
           <Route path="/" element={<Home />} />
+
           <Route path="/home" element={<Home />} />
+
           <Route path="browseJobs/*" element={<BrowseJobs />} />
+
           <Route path="/about" element={<About />} />
-          <Route path="/blogs" element={<PrivateRoute><Blogs></Blogs></PrivateRoute>} />
+
+          <Route path="/blogs" element={<PrivateRoute><Blogs/></PrivateRoute>} />
+
           <Route path="jobDetails/:productId" element={<PrivateRoute> <JobDetails/> </PrivateRoute>}/>
+
           <Route path="/contact" element={<Contact />} />
+
           <Route path="/login" element={<Login />} />
+
           <Route path="/register" element={<Register />} />
+
           <Route path="/postjob" element={<Postjob />} />
 
           <Route path="/profile" element={<UserProfile />}>
 
-            <Route path='/profile/user-info' element={<UserInfo />}>
+            <Route path='/profile/user-info' element={<UserInfo />}/>
 
-            </Route>
+            <Route path='/profile/user-jobs' element={<UserJobs/>}/>
 
-            <Route path='/profile/user-jobs' element={<UserJobs/>}>
+            <Route path='/profile/user-posts' element={<UserPosts/>}/>
 
-            </Route>
+            <Route path='/profile/user-bookmarks' element={<Bookmark/>}/>
 
-            <Route path='/profile/user-posts' element={<UserPosts/>}>
-
-            </Route>
 
           </Route>
 
         </Routes>
+
         <Footer />
+        
       </BrowserRouter>
 
     </div>

@@ -18,7 +18,7 @@ const UserProfile = () => {
     useEffect(() => {
 
         dispatch(getUserData(user?.email))
-        
+
     }, [user])
 
     return (
@@ -35,11 +35,14 @@ const UserProfile = () => {
                         <ListGroupItem onClick={() => navigate('/profile/user-posts')}>
                             Jobs Posted
                         </ListGroupItem>
+                        <ListGroupItem onClick={() => navigate('/profile/user-bookmarks')}>
+                            Bookmarks
+                        </ListGroupItem>
                     </ListGroup>
                 </Col>
 
                 <Col xs={12} md={8}>
-                    <Outlet/>
+                    <Outlet />
                 </Col>
 
             </Row>
