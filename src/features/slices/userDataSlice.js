@@ -26,7 +26,7 @@ export const deleteBookmark = createAsyncThunk(
     'user/deleteBookmark',
     async ({ email, job }) => {
 
-        const response = await fetch(`http://localhost:5000/user/bookmark?email=${email}`, {
+        const response = await fetch(`https://pure-earth-57563.herokuapp.com/user/bookmark?email=${email}`, {
 
             method: 'Delete',
             headers: {
@@ -44,7 +44,7 @@ export const postBookmark = createAsyncThunk(
     'user/bookmarks',
     async ({ email, job }) => {
 
-        const response = await fetch(`http://localhost:5000/user/bookmark?email=${email}`, {
+        const response = await fetch(`https://pure-earth-57563.herokuapp.com/user/bookmark?email=${email}`, {
             method: 'PUT',
             headers: {
                 "content-type": 'application/json'

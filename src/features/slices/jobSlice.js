@@ -31,7 +31,7 @@ export const deleteJob = createAsyncThunk(
 
     async ({ email, job }) => {
 
-        const response = await fetch(`http://localhost:5000/jobs?email=${email}`, {
+        const response = await fetch(`https://pure-earth-57563.herokuapp.com/jobs?email=${email}`, {
 
             method: 'DELETE',
             headers: {
