@@ -15,8 +15,8 @@ const UserInfo = () => {
             </div>
             <h4>{dbUser?.name}</h4>
             <h6 className="text-secondary">{dbUser?.email}</h6>
-            <h6>Posted Jobs : {dbUser?.postedJobs?.length}</h6>
-            <h6>Applied Jobs : {dbUser?.appliedJobs?.length}</h6>
+            <h6>Posted Jobs : {dbUser?.postedJobs?.length || 0}</h6>
+            <h6>Applied Jobs : {dbUser?.appliedJobs?.length || 0}</h6>
         </div>
     );
 };
