@@ -26,6 +26,25 @@ export const postJob = createAsyncThunk(
     }
 )
 
+export const deleteJob = createAsyncThunk(
+    'users/deleteJob',
+
+    async ({ email, job }) => {
+
+        const response = await fetch(`http://localhost:5000/jobs?email=${email}`, {
+
+            method: 'DELETE',
+            headers: {
+                "content-type": 'application/json'
+            },
+            body: JSON.stringify(job)
+        })
+            .then(res => res.json())
+
+        return response
+    }
+)
+
 export const getJobs = createAsyncThunk(
     'jobs/getJobs',
 
@@ -97,6 +116,11 @@ const jobSlice = createSlice({
             builder.addCase(postCandidateInfo.fulfilled, (state, action) => {
 
                 // console.log(action)
+            })
+
+            builder.addCase(deleteJob.fulfilled, (state, action) => {
+
+                console.log(action)
             })
         }
 })

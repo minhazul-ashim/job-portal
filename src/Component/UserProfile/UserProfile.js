@@ -24,7 +24,7 @@ const UserProfile = () => {
     return (
         <>
             <Row className='p-5'>
-                <Col xs={12} md={4} className='d-flex justify-content-center align-items-center position-sticky'>
+                <Col xs={12} md={4}>
                     <ListGroup>
                         <ListGroupItem onClick={() => navigate('/profile/user-info')}>
                             Your Profile Informations
